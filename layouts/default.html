@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>A Brand New nanoc Site - <%= @item[:title] %></title>
+    <title><%= @item[:title] %></title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
     <meta name="generator" content="nanoc 3.1.4">
   </head>
@@ -11,16 +11,18 @@
       <%= yield %>
     </div>
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <div id="bork">
+        <img src="/bork.jpg" alt="bork" title="bork" />
+      </div>
+      <h2>And Also.</h2>
       <ul>
-        <li><a href="http://nanoc.stoneship.org/docs/">Documentation</a></li>
-        <li><a href="http://nanoc.stoneship.org/docs/3-getting-started/">Getting Started</a></li>
+        <li><a href="http://github.com/opscode/chef/">Source Code on Github</a></li>
+        <li><a href="http://wiki.opscode.com/display/chef/Home">Chef Wiki</a></li>
       </ul>
       <h2>Community</h2>
       <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion Group</a></li>
-        <li><a href="irc://chat.freenode.net/#nanoc">IRC Channel</a></li>
-        <li><a href="http://projects.stoneship.org/trac/nanoc/">Wiki</a></li>
+        <li><a href="http://lists.opscode.com/sympa/lists">Mailing Lists</a></li>
+        <li><a href="irc://chat.freenode.net/#chef">IRC Channel</a></li>
       </ul>
     </div>
   </body>
