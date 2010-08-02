@@ -19,7 +19,19 @@ compile '/bork' do
 end
 
 route '/bork/' do
-  '/bork.jpg'
+  nil
+end
+
+compile '/chef/*' do
+  # already compiled
+end
+
+route '/chef/*/' do
+  item.identifier
+end
+
+route '/*.jpg/' do
+  item.identifier
 end
 
 compile '*' do

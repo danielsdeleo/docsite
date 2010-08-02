@@ -1,1 +1,5 @@
 output/
+.rake_tasks~
+rdoc/
+sources/
+
