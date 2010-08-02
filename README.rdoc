@@ -1,0 +1,9 @@
+= docsite
+docsite generates a static rdoc site. The code here generates a site for chef[http://github.com/opscode/chef]
+though it should be fairly straightforward to customize it for your own needs.
+
+== Dependencies
+* rake
+* grit
+* nanoc
+* sdoc
